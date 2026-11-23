@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects – CodeNotes: Tech &amp; Programming Blog</title>
+  <meta name="description" content="Gallery of six software projects from the CodeNotes blog: web apps, command-line tools, a chess engine and a REST API.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css" media="screen">
+  <link rel="alternate stylesheet" href="css/contrast.css" media="screen" title="High contrast" id="contrast-css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="visually-hidden" href="#main">Skip to main content</a>
+
+  <div class="a11y-bar">
+    <div class="container">
+      <span>Text size:</span>
+      <button type="button" id="btn-smaller" aria-label="Smaller text">A−</button>
+      <button type="button" id="btn-reset-size" aria-label="Default text size">A</button>
+      <button type="button" id="btn-bigger" aria-label="Larger text">A+</button>
+      <button type="button" id="btn-contrast" aria-pressed="false">High contrast</button>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">&lt;/&gt;</span> CodeNotes</a>
+      <nav class="main-nav" aria-label="Main menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html" class="current" aria-current="page">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <ol>
+        <li>You are here: <a href="index.html">Home</a></li>
+        <li class="here" aria-current="page">Projects</li>
+      </ol>
+    </div>
+  </nav>
+
+  <main id="main" class="container">
+    <h1>My Projects</h1>
+    <p class="lead">Learning to code means <strong>building things</strong>. These are six of my favourite
+      <strong>open-source projects</strong>, from small Linux command-line tools to full-stack web apps. Each card
+      has a short description, the <strong>technologies</strong> used and a link to the source code. The pictures are
+      illustrations of what each program does – select one to see it in full size.</p>
+    <p>All my code is public on my GitHub profile:
+      <a href="https://github.com/tanilhamdi">tanilhamdi on GitHub</a>.</p>
+
+    <div class="gallery">
+      <article class="project">
+        <figure>
+          <a class="thumb" href="images/projects/wpontime.jpg" data-title="wpontime (illustration)">
+            <img src="images/projects/wpontime-thumb.jpg" width="480" height="320"
+                 alt="Illustration of wpontime: a terminal shows a config file with three time periods and wallpaper paths, the wpontime command sets evening.jpg at 19:42, and three wallpaper previews for morning, afternoon and evening are shown with evening marked as active">
+          </a>
+          <figcaption>Illustration – select the image to view it in full size</figcaption>
+        </figure>
+        <h2>wpontime</h2>
+        <p>A lightweight <strong>wallpaper switcher for Linux</strong> that changes the desktop background according to the <strong>time of day</strong>. Time periods and images are set in a config file; an install script compiles it and adds a global <code>wpontime</code> command that can run from cron or a systemd timer.</p>
+        <p><strong>Built with:</strong> Java, Shell, feh</p>
+        <ul class="project-links">
+          <li><a href="https://github.com/tanilhamdi/wpontime">wpontime on GitHub</a></li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <figure>
+          <a class="thumb" href="images/projects/easymove.jpg" data-title="easyMove (illustration)">
+            <img src="images/projects/easymove-thumb.jpg" width="480" height="320"
+                 alt="Illustration of easyMove in a terminal: report.pdf is found in two saved folders, the user picks number 1 and the file is moved to the current directory; then the --latest and --list options are used">
+          </a>
+          <figcaption>Illustration – select the image to view it in full size</figcaption>
+        </figure>
+        <h2>easyMove</h2>
+        <p>A small <strong>command-line tool</strong> that moves a file or folder into the current directory <strong>by name</strong> from a list of saved folders. It shows a numbered menu for duplicates, falls back to <strong>fzf</strong> search, and <code>--latest</code> grabs the most recently downloaded file.</p>
+        <p><strong>Built with:</strong> C++17, standard library only</p>
+        <ul class="project-links">
+          <li><a href="https://github.com/tanilhamdi/easyMove">easyMove on GitHub</a></li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <figure>
+          <a class="thumb" href="images/projects/beggtho.jpg" data-title="Beggtho? Chat &amp; Dashboard (illustration)">
+            <img src="images/projects/beggtho-thumb.jpg" width="480" height="320"
+                 alt="Illustration of the Beggtho dashboard: quick link buttons for YouTube, Netflix and a random HIMYM episode on the left, and a chat room with four messages and a message box on the right">
+          </a>
+          <figcaption>Illustration – select the image to view it in full size</figcaption>
+        </figure>
+        <h2>Beggtho? Chat &amp; Dashboard</h2>
+        <p>A <strong>full-stack chat and dashboard app</strong> with registration and login, <strong>JWT sessions</strong> in HttpOnly cookies, bcrypt password hashing, protected routes and a chat room that refreshes every five seconds.</p>
+        <p><strong>Built with:</strong> React (Vite), Node.js, Express, MongoDB</p>
+        <ul class="project-links">
+          <li><a href="https://github.com/tanilhamdi/beggtho">beggtho on GitHub</a></li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <figure>
+          <a class="thumb" href="images/projects/hqm.jpg" data-title="HQM – Hospital Queue Management (illustration)">
+            <img src="images/projects/hqm-thumb.jpg" width="480" height="320"
+                 alt="Illustration of the HQM TV display: patient number 14 is highlighted in green as now serving, with patients 15 to 18 listed below as waiting">
+          </a>
+          <figcaption>Illustration – select the image to view it in full size</figcaption>
+        </figure>
+        <h2>HQM – Hospital Queue Management</h2>
+        <p>A <strong>hospital queue system</strong>: staff register patients with automatic queue numbers and mark them as done, while a <strong>TV display mode</strong> shows the waiting room which patient is being served.</p>
+        <p><strong>Built with:</strong> C# / ASP.NET Core Minimal API (.NET 9), React 19, Vite</p>
+        <ul class="project-links">
+          <li><a href="https://github.com/tanilhamdi/HQM-System">HQM-System on GitHub</a></li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <figure>
+          <a class="thumb" href="images/projects/land-analysis.jpg" data-title="Land Analysis Tool (illustration)">
+            <img src="images/projects/land-analysis-thumb.jpg" width="480" height="320"
+                 alt="Illustration of the Land Analysis Tool window in Turkish: an Excel file selection button, a year selector, seven analysis buttons and a bar chart of application status with 412 accepted, 138 rejected and 57 pending">
+          </a>
+          <figcaption>Illustration – select the image to view it in full size</figcaption>
+        </figure>
+        <h2>Land Analysis Tool</h2>
+        <p>A <strong>desktop GUI</strong> for analysing <strong>Turkish real-estate data</strong> from Excel files: district counts, land classification, status distribution and area totals. The interface is in Turkish – for example <span lang="tr">„EXCEL DOSYASI SEÇ”</span> means “select Excel file”. A Windows executable is available.</p>
+        <p><strong>Built with:</strong> Python, Tkinter, Pandas</p>
+        <ul class="project-links">
+          <li><a href="https://github.com/tanilhamdi/land-analysis-tool">land-analysis-tool on GitHub</a></li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <figure>
+          <a class="thumb" href="images/projects/transferit.jpg" data-title="transferIt (illustration)">
+            <img src="images/projects/transferit-thumb.jpg" width="480" height="320"
+                 alt="Illustration of transferIt with two terminals side by side: the sender sends photo.jpg to port 5555 and finds the receiver at 192.168.1.42, and the receiver confirms that photo.jpg arrived">
+          </a>
+          <figcaption>Illustration – select the image to view it in full size</figcaption>
+        </figure>
+        <h2>transferIt</h2>
+        <p><strong>File transfer on a local network</strong> – just pick a <strong>port number</strong>: no IP addresses, accounts or cloud. A <code>serve</code> mode shows a QR code so phones can download the files in a browser.</p>
+        <p><strong>Built with:</strong> C# (.NET 10), Shell</p>
+        <ul class="project-links">
+          <li><a href="https://github.com/tanilhamdi/transferIt">transferIt on GitHub</a></li>
+        </ul>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 CodeNotes · Web Development course project,
+        <span lang="hu">Eötvös Loránd Tudományegyetem</span> ·
+        <a href="https://github.com/tanilhamdi">CodeNotes author on GitHub</a></p>
+      <nav aria-label="Footer menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

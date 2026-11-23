@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home – CodeNotes: Tech &amp; Programming Blog</title>
+  <meta name="description" content="CodeNotes is a minimalist blog about programming languages, developer tools and the software world.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css" media="screen">
+  <link rel="alternate stylesheet" href="css/contrast.css" media="screen" title="High contrast" id="contrast-css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="visually-hidden" href="#main">Skip to main content</a>
+
+  <div class="a11y-bar">
+    <div class="container">
+      <span>Text size:</span>
+      <button type="button" id="btn-smaller" aria-label="Smaller text">A−</button>
+      <button type="button" id="btn-reset-size" aria-label="Default text size">A</button>
+      <button type="button" id="btn-bigger" aria-label="Larger text">A+</button>
+      <button type="button" id="btn-contrast" aria-pressed="false">High contrast</button>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">&lt;/&gt;</span> CodeNotes</a>
+      <nav class="main-nav" aria-label="Main menu">
+        <ul>
+          <li><a href="index.html" class="current" aria-current="page">Home</a></li>
+          <li><a href="gallery.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <ol>
+        <li class="here" aria-current="page">You are here: Home</li>
+      </ol>
+    </div>
+  </nav>
+
+  <main id="main" class="container">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-box">
+        <h1 id="hero-title">CodeNotes – Tech &amp; Programming Blog</h1>
+        <p>Short, practical notes about <strong>programming languages</strong>, <strong>developer tools</strong>
+          and the software world – written for students who learn by building.</p>
+      </div>
+    </section>
+
+    <div class="home-layout">
+      <section aria-labelledby="latest-title">
+        <h2 id="latest-title">Latest Posts</h2>
+
+        <article class="post">
+          <figure>
+            <img src="images/post-python.jpg" width="800" height="600"
+                 alt="Code editor showing a seven-line Python script that imports Path and defines a word_count function">
+          </figure>
+          <div>
+            <h3>Python for Beginners: Your First Useful Script</h3>
+            <p class="meta"><time datetime="2026-11-18">18 November 2026</time> | Python</p>
+            <p>Forget “Hello, World”. Your first script should <strong>solve a real problem</strong>. We write a
+              tiny <code>word_count</code> function that reads a text file and counts its words – in only
+              five lines of <strong>Python</strong>.</p>
+            <details>
+              <summary>Read more: Python for Beginners</summary>
+              <p>The script uses three ideas every beginner needs:</p>
+              <ul>
+                <li><strong>Importing</strong> from the standard library – <code>pathlib.Path</code> opens files safely.</li>
+                <li><strong>Functions</strong> – wrapping the logic in <code>word_count(path)</code> makes it reusable and testable.</li>
+                <li><strong>Built-in methods</strong> – <code>split()</code> cuts the text on whitespace and <code>len()</code> counts the pieces.</li>
+              </ul>
+              <p>Next step: add a test for an empty file. The official
+                <a href="https://docs.python.org/3/tutorial/">Python tutorial</a> is the best free place to continue.</p>
+            </details>
+          </div>
+        </article>
+
+        <article class="post">
+          <figure>
+            <img src="images/post-git.jpg" width="800" height="600"
+                 alt="Terminal with Git commands: creating a feature branch, adding a file, committing it and showing the commit log">
+          </figure>
+          <div>
+            <h3>Git Basics: Branches, Commits and Pull Requests</h3>
+            <p class="meta"><time datetime="2026-11-10">10 November 2026</time> | Tools</p>
+            <p><strong>Git</strong> is the safety net of every developer. Learn the
+              <strong>four commands</strong> you will use every day and why every new feature deserves its own
+              <strong>branch</strong>.</p>
+            <details>
+              <summary>Read more: Git Basics</summary>
+              <ol>
+                <li><code>git switch -c feature/name</code> – start a new branch for one feature.</li>
+                <li><code>git add file</code> – choose which changes go into the next commit.</li>
+                <li><code>git commit -m "message"</code> – save a snapshot with a short, clear message.</li>
+                <li><code>git push</code> – upload the branch and open a <strong>pull request</strong> for review.</li>
+              </ol>
+              <p><strong>Tip:</strong> write commit messages in the imperative: “Add search box”, not “added stuff”.
+                The free <a href="https://git-scm.com/book/en/v2">Pro Git book</a> explains every command in detail.</p>
+            </details>
+          </div>
+        </article>
+
+        <article class="post">
+          <figure>
+            <img src="images/post-css.jpg" width="800" height="600"
+                 alt="CSS code for a three-column grid next to a preview of nine coloured boxes arranged in three rows">
+          </figure>
+          <div>
+            <h3>CSS Grid in 10 Minutes</h3>
+            <p class="meta"><time datetime="2026-11-02">2 November 2026</time> | Web</p>
+            <p>Responsive layouts used to need floats and hacks. With <strong>CSS Grid</strong> a three-column
+              gallery is <strong>three lines of code</strong> – and one media query turns it into a single column
+              on phones.</p>
+            <details>
+              <summary>Read more: CSS Grid in 10 Minutes</summary>
+              <ul>
+                <li><code>display: grid</code> turns a container into a grid.</li>
+                <li><code>grid-template-columns: 1fr 1fr 1fr</code> creates three equal columns.</li>
+                <li><code>gap: 1rem</code> adds space between the cells – no more margin tricks.</li>
+              </ul>
+              <p>Start <strong>mobile first</strong>: one column by default, then add columns in
+                <code>@media (min-width: …)</code> rules. This very blog uses the same technique on the
+                <a href="gallery.html">Projects page</a>.</p>
+            </details>
+          </div>
+        </article>
+      </section>
+
+      <aside class="sidebar" aria-label="Sources and tags">
+        <section>
+          <h2>Useful Sources</h2>
+          <ul class="source-list">
+            <li><a href="https://developer.mozilla.org/">MDN Web Docs</a>
+              <span>Reference for HTML, CSS and JavaScript</span></li>
+            <li><a href="https://validator.w3.org/">W3C Markup Validator</a>
+              <span>Check that your HTML is valid</span></li>
+            <li><a href="https://github.com/tanilhamdi">My GitHub profile</a>
+              <span>All my projects and their source code</span></li>
+          </ul>
+        </section>
+        <section>
+          <h2>Tags</h2>
+          <ul class="tag-list">
+            <li>Python</li>
+            <li>Web</li>
+            <li>Tools</li>
+            <li>Tips</li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 CodeNotes · Web Development course project,
+        <span lang="hu">Eötvös Loránd Tudományegyetem</span> ·
+        <a href="https://github.com/tanilhamdi">CodeNotes author on GitHub</a></p>
+      <nav aria-label="Footer menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

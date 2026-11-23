@@ -1,0 +1,154 @@
+/* =========================================================
+   CodeNotes – print style sheet
+   Repeated blocks (menu, header, footer, sidebar), the video,
+   buttons and the form are removed; images are scaled down;
+   compact black serif text on white saves paper and ink.
+   ========================================================= */
+
+@page {
+  margin: 1.5cm;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #000000;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 11pt;
+  line-height: 1.35;
+}
+
+/* things that make no sense on paper */
+.a11y-bar,
+.site-header,
+.breadcrumb,
+.site-footer,
+.sidebar,
+.visually-hidden,
+video,
+.form-section,
+.lightbox,
+button {
+  display: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  page-break-after: avoid;
+}
+
+h1 {
+  font-size: 18pt;
+  margin: 0 0 6pt;
+}
+
+h2 {
+  font-size: 14pt;
+  margin: 12pt 0 4pt;
+}
+
+h3 {
+  font-size: 12pt;
+  margin: 8pt 0 2pt;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 6pt;
+}
+
+a,
+a:link,
+a:visited {
+  color: #000000;
+  text-decoration: underline;
+}
+
+/* print the address of external links */
+a[href^="http"]::after {
+  content: " (" attr(href) ")";
+  font-size: 9pt;
+}
+
+/* no background picture, only the text */
+.hero {
+  background: none;
+  padding: 0;
+  margin: 0 0 8pt;
+}
+
+.hero-box {
+  padding: 0;
+}
+
+.hero h1,
+.hero p {
+  color: #000000;
+}
+
+/* images scaled down */
+img {
+  max-width: 6cm;
+  height: auto;
+}
+
+.post,
+.project {
+  border: 0;
+  margin: 0 0 8pt;
+  padding: 0;
+  page-break-inside: avoid;
+}
+
+.post figure,
+.project figure {
+  float: left;
+  margin: 0 10pt 4pt 0;
+}
+
+.post img {
+  max-width: 4cm;
+}
+
+.post::after,
+.project::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.gallery figcaption {
+  display: none;
+}
+
+details,
+summary {
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10pt;
+}
+
+th,
+td {
+  border: 1px solid #000000;
+  padding: 3pt 5pt;
+  text-align: left;
+}
+
+caption {
+  text-align: left;
+  font-style: italic;
+  margin-bottom: 4pt;
+}
+
+code {
+  font-family: "Courier New", Courier, monospace;
+}

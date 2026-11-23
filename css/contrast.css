@@ -1,0 +1,159 @@
+/* =========================================================
+   CodeNotes – alternative style sheet:
+   large font, high contrast (for visually impaired users).
+   Loaded as "alternate stylesheet", switched on by script.js
+   (or in Firefox: View › Page Style › High contrast).
+   ========================================================= */
+
+html {
+  font-size: 125%;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+strong,
+.hero h1,
+caption summary {
+  color: #ffffff;
+}
+
+/* unvisited: yellow, visited: white (even higher contrast) */
+a:link {
+  color: #ffff00;
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+a:hover,
+a:focus {
+  color: #00ffff;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+summary:focus {
+  outline: 4px solid #00ffff;
+}
+
+summary {
+  color: #ffff00;
+}
+
+code {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+/* every box: black background, white border */
+.a11y-bar,
+.site-header,
+.breadcrumb,
+.site-footer,
+.post,
+.sidebar,
+.source-list li,
+.project,
+.transcript,
+.contact-form,
+table,
+tbody tr:nth-child(odd),
+.table-toggle > summary,
+.hero-box {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.site-header,
+.site-footer,
+.breadcrumb {
+  border-bottom: 2px solid #ffffff;
+}
+
+/* no background picture behind text in this mode */
+.hero {
+  background-image: none;
+  background-color: #000000;
+  border: 2px solid #ffffff;
+}
+
+.meta,
+.hint,
+.source-list span,
+.project figcaption,
+.video-layout figcaption,
+.breadcrumb li + li::before {
+  color: #ffffff;
+}
+
+.main-nav a:link,
+.main-nav a:visited,
+.site-footer a:link,
+.logo:link,
+.logo:visited {
+  color: #ffff00;
+}
+
+.main-nav a.current,
+.main-nav a.current:visited {
+  background-color: #ffff00;
+  color: #000000;
+}
+
+.logo-mark {
+  color: #ffff00;
+}
+
+th,
+td,
+fieldset {
+  border-color: #ffffff;
+}
+
+thead th {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.a11y-bar button,
+.btn-reset,
+.lightbox button {
+  background-color: #000000;
+  color: #ffff00;
+  border: 2px solid #ffff00;
+}
+
+.btn-submit,
+.a11y-bar button[aria-pressed="true"] {
+  background-color: #ffff00;
+  color: #000000;
+  border: 2px solid #ffff00;
+}
+
+.required {
+  color: #ff8080;
+}
+
+.lightbox {
+  background-color: #000000;
+}

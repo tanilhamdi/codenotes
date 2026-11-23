@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact and Newsletter – CodeNotes: Tech &amp; Programming Blog</title>
+  <meta name="description" content="Compare programming languages, watch a coding guide video by ThePrimeagen and subscribe to the newsletter or send a question.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css" media="screen">
+  <link rel="alternate stylesheet" href="css/contrast.css" media="screen" title="High contrast" id="contrast-css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="visually-hidden" href="#main">Skip to main content</a>
+
+  <div class="a11y-bar">
+    <div class="container">
+      <span>Text size:</span>
+      <button type="button" id="btn-smaller" aria-label="Smaller text">A−</button>
+      <button type="button" id="btn-reset-size" aria-label="Default text size">A</button>
+      <button type="button" id="btn-bigger" aria-label="Larger text">A+</button>
+      <button type="button" id="btn-contrast" aria-pressed="false">High contrast</button>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">&lt;/&gt;</span> CodeNotes</a>
+      <nav class="main-nav" aria-label="Main menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Projects</a></li>
+          <li><a href="contact.html" class="current" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <ol>
+        <li>You are here: <a href="index.html">Home</a></li>
+        <li class="here" aria-current="page">Contact and Newsletter</li>
+      </ol>
+    </div>
+  </nav>
+
+  <main id="main" class="container">
+    <h1>Contact and Newsletter</h1>
+    <p class="lead">Compare popular languages, watch a <strong>coding guide video</strong>, then
+      <strong>subscribe to the newsletter</strong> or send us a question using the form at the bottom of the page.</p>
+
+    <section aria-labelledby="table-title">
+      <h2 id="table-title">Programming Languages Compared</h2>
+      <p>Which language should you learn first? The table compares four popular languages by
+        <strong>usage share</strong>, <strong>how they run</strong> and <strong>how hard they are to learn</strong>.</p>
+
+      <details class="table-toggle">
+        <summary>Show table</summary>
+        <div class="table-wrap">
+          <table>
+            <caption>
+              <details>
+                <summary>Language usage rates and features</summary>
+                <p>Usage share = percentage of all respondents who used the language in the
+                  <a href="https://survey.stackoverflow.co/2024/technology">Stack Overflow Developer Survey 2024</a>.
+                  The learning curve is our own estimate for a complete beginner.</p>
+              </details>
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Language</th>
+                <th scope="col">Usage share</th>
+                <th scope="col">Type</th>
+                <th scope="col">Learning curve</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Python</th>
+                <td>51.0%</td>
+                <td>Interpreted</td>
+                <td>Easy</td>
+              </tr>
+              <tr>
+                <th scope="row">JavaScript</th>
+                <td>62.3%</td>
+                <td>Interpreted (JIT-compiled in browsers)</td>
+                <td>Medium</td>
+              </tr>
+              <tr>
+                <th scope="row">Java</th>
+                <td>30.3%</td>
+                <td>Compiled to bytecode (runs on the JVM)</td>
+                <td>Medium</td>
+              </tr>
+              <tr>
+                <th scope="row">C</th>
+                <td>20.3%</td>
+                <td>Compiled to machine code</td>
+                <td>Hard</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+    </section>
+
+    <section aria-labelledby="video-title">
+      <h2 id="video-title">Coding Guide Video</h2>
+      <p>Already know one language and want to learn the next one? In this <strong>6-minute video</strong>
+        <strong>ThePrimeagen</strong> explains his <strong>three-step method</strong> for learning a new programming
+        language – a perfect companion to the comparison table above.</p>
+
+      <div class="video-layout">
+        <figure>
+          <video controls preload="metadata" width="1280" height="720" poster="images/video-poster.jpg">
+            <source src="videos/learn-new-language.mp4" type="video/mp4">
+            <p>Your browser cannot play this video.
+              <a href="videos/learn-new-language.mp4">Download “How To Learn A New Programming Language” (MP4, 17 MB)</a>.</p>
+          </video>
+          <figcaption>“How To Learn A New Programming Language” by ThePrimeagen, 6:24 – original video:
+            <a href="https://www.youtube.com/watch?v=E8cM12jRH7k">ThePrimeagen on YouTube</a></figcaption>
+        </figure>
+
+        <details class="transcript">
+          <summary>Video text transcript</summary>
+          <p>Full text of the video. Descriptions of what is on screen are in <em>italics</em>.</p>
+          <p><em>On screen (0:00): ThePrimeagen sits at his desk wearing headphones, with a microphone in front of
+            him and a virtual office background with a red “TheStartup” logo. He talks straight to the camera and
+            gestures a lot with his hands. Whenever he shows his screen, his webcam picture stays small in the
+            bottom-right corner.</em></p>
+
+          <h3>0:00 Intro</h3>
+          <p><strong>0:00</strong> “So I've learned quite a few different languages through my 20 years as an expert
+            HTML programmer, and during these 20 years I've kind of developed a road map to learn new languages, and I
+            wanted to take the time to show you how I do that. Because when I first started out I didn't really have a
+            direction, but as I started learning and getting more proficient I kind of developed my own little bit of
+            a pattern.”</p>
+          <p><strong>0:23</strong> “Now the thing is, this video is strictly meant for someone not learning their
+            first language. This is really a second-and-beyond language, and not all languages will really work this
+            way. I can imagine that if you're learning JavaScript and you want to learn Haskell, this pattern may not
+            100% line up, just because Haskell is such a different language from JavaScript.”</p>
+
+          <h3>0:46 Step 1: Exploration / documentation</h3>
+          <p><strong>0:46</strong> “So the first of three steps that I have is the exploration slash documentation
+            phase. Now this may take you a little bit depending on your programming chops, but it's a really simple
+            process. Practically speaking, what that means is going to Advent of Code and starting to solve
+            problems.”</p>
+          <p><strong>0:57</strong> <em>On screen: his web browser with the Advent of Code 2022 puzzle “Day 1: Calorie
+            Counting”. He scrolls down to the example input, a list of numbers, which is highlighted.</em></p>
+          <p><strong>1:03</strong> “Why I choose this is
+            a couple of reasons. First off, you'll notice right here that this should be in a file – you have to read
+            from a file system. File reading can fail, therefore there's going to be errors, so it gives me a chance to
+            understand how errors work in the system, how string processing works, if, while, iterator structures,
+            enums. It just gives me a good overview of the language and what tools are really available for me to
+            solve problems in it.”</p>
+          <p><strong>1:25</strong> “It also gives me a chance to look at how they handle null and undefined, because
+            in Rust it's going to be an Option, whereas in TypeScript it's going to be null or undefined, and so
+            they're very different ways you handle it – pattern matching, if statements – it's totally different. It
+            gives you a good overview, and every time you run into something you don't understand, you go look it up
+            in the documentation and read about it. That way you just learn by doing.”</p>
+          <p><strong>1:49</strong> “I think that's a very important point. I am not somebody – and I doubt you are
+            either – who can just read through pages upon pages of what the language does and then, boom, I can
+            program because I'm amazing at it. That's usually not how it works. Usually we learn with our hands more
+            than with our eyes; we have to program through a bunch of problems to pick everything up.”</p>
+          <p><strong>2:14</strong> <em>On screen: the Advent of Code 2022 calendar page with its ASCII-art picture and
+            the stars he has collected.</em> “The second reason why I really love Advent of Code – which I strongly suggest you
+            do – is that there's a bunch of problems here. I only go so far in Advent of Code; I don't like to go all
+            the way up, it gets very tedious. But tons of people have either solved the problem or are going to solve
+            it with you, so you can ask questions, bounce answers off of people, code review other people's solutions.
+            People write blogs about it. There's a lot of available information about solving these problems
+            specifically in the language you're looking for, so you get a bunch of experience right away.”</p>
+
+          <h3>2:45 Step 2: A websocket server</h3>
+          <p><strong>2:45</strong> <em>At 2:48 the video goes back to the camera.</em> “The second one I like to do is a websocket server. I think this is super
+            important, and I really enjoy this phase of the learning process, because I usually build something super
+            simple: a chat room that takes connections. Someone says ‘join’ and a string, someone says ‘leave’ and the
+            string, or they send ‘message’, the name of the room and the message they want to send to everyone in
+            that room.”</p>
+          <p><strong>3:08</strong> “It gives me the ability to hold on to sockets. How do we do sockets? What does the
+            standard library actually provide versus what third-party libraries are out there? It really gives you a
+            good idea of what the ecosystem is, how modules work in the language, and the best part: how does it
+            handle async? Are there primitives around it, or do you just have to use threads? How do you actually work
+            with async in the language?”</p>
+
+          <h3>3:31 Step 3: A larger project</h3>
+          <p><strong>3:31</strong> “My third goal is usually to build a larger project – something that makes me
+            exercise a lot of patterns and has to maintain itself with lots of lines of code, because often you'll
+            start finding weird chinks in the armor: how memory is stored, how the borrow checker works, how bad your
+            ideas around it are. It has to get to a certain level before you can really feel the language out.”</p>
+          <p><strong>3:58</strong> <em>At 4:06, for a few seconds, the screen shows the website of the book “Writing
+            An Interpreter In Go” by Thorsten Ball, then the camera returns.</em> “For my recent endeavors
+            into Zig I've chosen to build an interpreter – this interpreter right here, fantastic book, Thorsten Ball.
+            Why I chose that is that I'm going to build the interpreter in TypeScript, then in Rust and then finally in
+            Zig, so I can use the experience from languages I'm good at in a language I'm bad at, and draw
+            similarities and differences in how Zig handles various things.”</p>
+          <p><strong>4:22</strong> <em>From 4:29 the screen shows his TypeScript <code>Tokenizer</code> class
+            (<code>index.ts</code>) in the Neovim editor: a long <code>switch</code> statement that creates a token
+            for each character, followed by <code>if</code> checks for letters and keywords.</em> “Let me give you a good example. If
+            you're familiar with TypeScript, building a lexer means you come across all these tokens and you have to
+            create these little tokens. I define the token, and based on all these different conditions I return a
+            token, and at the end I also have to check for the more programmatic cases, because there's no way to
+            express it all in one statement unless you only use ifs and elses.”</p>
+          <p><strong>4:47</strong> <em>On screen: the same lexer in Rust (<code>lexer.rs</code>). He highlights the
+            <code>match self.ch</code> branch for letters and underscores, which reads an identifier and checks for
+            keywords such as <code>fn</code>, <code>let</code> and <code>if</code>.</em> “Whereas with Rust you can do
+            a match statement, in which I can express all these different things simply in one statement. Look at
+            this: if it matches this, I go through my identifier process – whereas in TypeScript that's just a function
+            doing the exact same thing.”</p>
+          <p><strong>5:05</strong> <em>On screen: the lexer in Zig (<code>lexer.zig</code>), with a very similar
+            <code>switch</code> branch for the letters a–z, A–Z and the underscore highlighted.</em> “And the cool part is Zig actually
+            has something very similar. You'll notice right here I can do almost the same thing I do in Rust, so I get
+            the cool parts of Rust and more of the ease of handling of TypeScript – a really interesting middle-ground
+            language.”</p>
+          <p><strong>5:21</strong> <em>At 5:23 the video goes back to the camera for the rest of the video.</em>
+            “Usually by the time I'm done with the project I have a pretty strong grasp. For me
+            to really know if I like a language, I have to build a few things. If you don't build a few things it's
+            really hard to know how the language actually feels. A lot of ideas seem great on paper, but until you
+            build something sufficiently large they're just ideas – they're not concrete, you don't know if they're
+            good, they're just whiteboard.”</p>
+
+          <h3>5:47 Plans and the “fourth step”</h3>
+          <p><strong>5:47</strong> “So that's how I go about learning languages. I'm going to apply this exact same
+            principle soon on Twitch with OCaml, once I'm done building the interpreter in these three languages, and
+            see if I can keep applying it even in languages very far outside the ones I know – OCaml being closest to
+            Rust, but a very functional, very different language. My guess is it should not be that hard. Pretty dang
+            excited about it.”</p>
+          <p><strong>6:10</strong> <em>He leans close to the camera and grins.</em> “Oh, I actually forgot the fourth step. The fourth step, of course, is to press
+            like and subscribe. It just works, it makes you better. I don't know why. The name is ThePrimeagen.”</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="form-section" aria-labelledby="form-title">
+      <h2 id="form-title">Newsletter and Contact Form</h2>
+      <p>Get <strong>one short e-mail per month</strong> with new posts, or ask us a question. Fields marked with
+        <span class="required">*</span> are required.</p>
+
+      <form class="contact-form" action="https://httpbin.org/post" method="post">
+        <div class="field field-row">
+          <label for="fullname">Full name <span class="required">*</span></label>
+          <div>
+            <input type="text" id="fullname" name="fullname" size="30" maxlength="60" required autocomplete="name">
+            <span class="hint">For example: Anna Kovács</span>
+          </div>
+        </div>
+
+        <div class="field field-row">
+          <label for="email">E-mail address <span class="required">*</span></label>
+          <div>
+            <input type="email" id="email" name="email" size="30" maxlength="80" required autocomplete="email">
+            <span class="hint">We only use it to send the newsletter or to answer you.</span>
+          </div>
+        </div>
+
+        <fieldset>
+          <legend>Subject (choose one or both)</legend>
+          <span class="choice">
+            <input type="checkbox" id="subject-newsletter" name="subject" value="newsletter">
+            <label for="subject-newsletter">Newsletter signup</label>
+          </span>
+          <span class="choice">
+            <input type="checkbox" id="subject-question" name="subject" value="question" checked>
+            <label for="subject-question">Contact / question</label>
+          </span>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your programming experience <span class="required">*</span></legend>
+          <span class="choice">
+            <input type="radio" id="level-none" name="level" value="none" required>
+            <label for="level-none">None yet</label>
+          </span>
+          <span class="choice">
+            <input type="radio" id="level-beginner" name="level" value="beginner">
+            <label for="level-beginner">Beginner</label>
+          </span>
+          <span class="choice">
+            <input type="radio" id="level-intermediate" name="level" value="intermediate">
+            <label for="level-intermediate">Intermediate</label>
+          </span>
+          <span class="choice">
+            <input type="radio" id="level-advanced" name="level" value="advanced">
+            <label for="level-advanced">Advanced</label>
+          </span>
+        </fieldset>
+
+        <div class="field">
+          <label for="message">Message or question</label>
+          <textarea id="message" name="message" rows="6" cols="50" maxlength="1000"
+                    aria-describedby="message-count"></textarea>
+          <span class="hint" id="message-count">Maximum 1000 characters.</span>
+        </div>
+
+        <div class="field consent">
+          <input type="checkbox" id="privacy" name="privacy" value="accepted" required>
+          <label for="privacy">I agree that CodeNotes stores my name and e-mail address only to answer me or to send
+            the newsletter. <span class="required">*</span></label>
+        </div>
+
+        <p class="buttons">
+          <button type="reset" class="btn-reset">Clear the form</button>
+          <button type="submit" class="btn-submit">Send message</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 CodeNotes · Web Development course project,
+        <span lang="hu">Eötvös Loránd Tudományegyetem</span> ·
+        <a href="https://github.com/tanilhamdi">CodeNotes author on GitHub</a></p>
+      <nav aria-label="Footer menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
